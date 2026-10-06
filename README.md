@@ -196,23 +196,3 @@ Números reais, medidos pelos experimentos acima:
 
 Detalhes, metodologia e a comparação conceitual com o SNMP real estão no
 relatório técnico.
-
-## Estrutura do projeto
-
-```
-minisnmp/
-├── common/
-│   ├── common.h        # constantes do protocolo e a MIB simplificada
-│   └── net.c / net.h   # sockets: listen, connect com timeout, E/S por linha
-├── agent/
-│   ├── agent.c          # programa do agente
-│   └── metrics.c/h      # coleta das métricas via /proc
-├── manager/
-│   └── manager.c        # programa do gerente: consulta periódica, painel, log, CSV
-├── tests/
-│   ├── run_tests.sh      # testes funcionais (make test)
-│   └── experiments.py    # experimentos quantitativos
-├── relatorio/
-│   └── main.tex          # relatório técnico (LaTeX)
-└── Makefile
-```
