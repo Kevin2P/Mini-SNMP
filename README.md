@@ -1,16 +1,10 @@
-<div align="center">
-
 # Mini-SNMP
 
 **Sistema de gerenciamento de rede simplificado, inspirado no SNMP**
 
 Gerente ↔ Agentes sobre sockets TCP · protocolo próprio (MSMP) · métricas reais via `/proc`
 
-Trabalho Prático 2 · Monitoramento, Gerenciamento e Observabilidade em Redes · IME-USP
-
 Autores: Kevin and Christian
-
-</div>
 
 ---
 
@@ -236,15 +230,3 @@ minisnmp/
 │   └── main.tex          # relatório técnico (LaTeX)
 └── Makefile
 ```
-
-## Relatório técnico
-
-As 8 seções pedidas pelo enunciado (arquitetura, protocolo, MIB, métricas,
-experimentos, resultados, limitações e comparação com o SNMP real) estão em
-[`relatorio/main.tex`](relatorio/main.tex), com os dados reais dos
-experimentos acima.
-
----
-
-**Autores:** [nome do integrante 1], [nome do integrante 2]
-**Disciplina:** Monitoramento, Gerenciamento e Observabilidade em Redes · IME-USP
