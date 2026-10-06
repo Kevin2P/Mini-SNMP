@@ -8,18 +8,6 @@ Autores: Kevin and Christian
 
 ---
 
-## Sumário
-
-- [Visão geral](#visão-geral)
-- [Início rápido](#início-rápido)
-- [Protocolo (MSMP)](#protocolo-msmp)
-- [MIB simplificada](#mib-simplificada)
-- [O gerente em ação](#o-gerente-em-ação)
-- [Como testar](#como-testar)
-- [Resultados](#resultados)
-- [Estrutura do projeto](#estrutura-do-projeto)
-- [Relatório técnico](#relatório-técnico)
-
 ## Visão geral
 
 O sistema tem dois programas independentes, em C, que conversam por sockets TCP:
