@@ -6,8 +6,6 @@ Gerente ↔ Agentes sobre sockets TCP · protocolo próprio (MSMP) · métricas 
 
 Autores: Kevin and Christian
 
----
-
 ## Visão geral
 
 O sistema tem dois programas independentes, em C, que conversam por sockets TCP:
