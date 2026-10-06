@@ -2,7 +2,7 @@
 
 **Sistema de gerenciamento de rede simplificado, inspirado no SNMP**
 
-Gerente ↔ Agentes sobre sockets TCP · protocolo próprio (MSMP) · métricas reais via `/proc`
+Gerente - Agentes sobre sockets TCP · protocolo próprio (MSMP) · métricas reais via `/proc`
 
 Autores: Kevin and Christian
 
