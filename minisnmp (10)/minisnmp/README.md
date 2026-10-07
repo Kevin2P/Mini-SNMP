@@ -1,28 +1,10 @@
-<div align="center">
-
 # Mini-SNMP
 
 **Sistema de gerenciamento de rede simplificado, inspirado no SNMP**
 
-Gerente ↔ Agentes sobre sockets TCP · protocolo próprio (MSMP) · métricas reais via `/proc`
+Gerente - Agentes sobre sockets TCP · protocolo próprio (MSMP) · métricas reais via `/proc`
 
-Trabalho Prático 2 · Monitoramento, Gerenciamento e Observabilidade em Redes · IME-USP
-
-</div>
-
----
-
-## Sumário
-
-- [Visão geral](#visão-geral)
-- [Início rápido](#início-rápido)
-- [Protocolo (MSMP)](#protocolo-msmp)
-- [MIB simplificada](#mib-simplificada)
-- [O gerente em ação](#o-gerente-em-ação)
-- [Como testar](#como-testar)
-- [Resultados](#resultados)
-- [Estrutura do projeto](#estrutura-do-projeto)
-- [Relatório técnico](#relatório-técnico)
+Autores: Kevin and Christian
 
 ## Visão geral
 
@@ -214,35 +196,3 @@ Números reais, medidos pelos experimentos acima:
 
 Detalhes, metodologia e a comparação conceitual com o SNMP real estão no
 relatório técnico.
-
-## Estrutura do projeto
-
-```
-minisnmp/
-├── common/
-│   ├── common.h        # constantes do protocolo e a MIB simplificada
-│   └── net.c / net.h   # sockets: listen, connect com timeout, E/S por linha
-├── agent/
-│   ├── agent.c          # programa do agente
-│   └── metrics.c/h      # coleta das métricas via /proc
-├── manager/
-│   └── manager.c        # programa do gerente: consulta periódica, painel, log, CSV
-├── tests/
-│   ├── run_tests.sh      # testes funcionais (make test)
-│   └── experiments.py    # experimentos quantitativos
-├── relatorio/
-│   └── main.tex          # relatório técnico (LaTeX)
-└── Makefile
-```
-
-## Relatório técnico
-
-As 8 seções pedidas pelo enunciado (arquitetura, protocolo, MIB, métricas,
-experimentos, resultados, limitações e comparação com o SNMP real) estão em
-[`relatorio/main.tex`](relatorio/main.tex), com os dados reais dos
-experimentos acima.
-
----
-
-**Autores:** [nome do integrante 1], [nome do integrante 2]
-**Disciplina:** Monitoramento, Gerenciamento e Observabilidade em Redes · IME-USP
